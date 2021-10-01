@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="./filmJs.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<main>
+
+    <section id ="login">
+        <header> Login/Registrer </header>
+
+        <div id="infoBoksLogin" ></div>
+        <i class="fa fa-circle-o-notch fa-spin" id="spinner3" ></i>
+        <div class="partB">
+            <div class="row">
+                <div class="colA">
+                    <label for="brukernavn" > Brukernavn  </label>
+                </div>
+                <div class="colX">
+                    <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                </div>
+                <div class="colB">
+                    <input type="text" id="brukernavn" placeholder=" Brukernavn "/>
+                </div>
+                <div class="error colC" id="errorBrukernavn"><p></p></div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="colA">
+                <label for="passord"> Passord </label>
+            </div>
+            <div class="colX">
+                <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+            </div>
+            <div class="colB">
+                <input type="password" id="passord" placeholder=" Passord "/>
+            </div>
+            <div class="error colC" id="errorPassord"><p></p></div>
+        </div>
+
+        <div class="row">
+            <button id="loginOk">Login</button>
+            <button id="registrer">Registrer </button>
+        </div>
+    </section>
+
+    <section id="bestill">
+
+        <header>Bestilling av kinobiletter </header>
+        <div id="infoBoks" class ="warning"></div>
+        <form id="kinoBilett">
+            <div id="partA">
+                <div class="row">
+                    <div class="colA">
+                        <i class="fa fa-circle-o-notch fa-spin" id="spinner1" style="font-size:32px"></i>
+                        <label for="filmValg">Velg film  </label>
+
+                    </div>
+                    <div class="colX">
+                        <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="colB">
+                        <select id="filmValg"></select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="colA">
+                        <label for="antall"> Antall  </label>
+
+                    </div>
+                    <div class="colX">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="colB">
+                        <input type="text" id="antall" placeholder=" Antall " />
+                    </div>
+                    <div class="error colC" id="errorAntall"><p></p></div>
+                </div>
+            </div>
+            <div class="partB">
+                <div class="row">
+                    <div class="colA">
+                        <label for="fornavn" > Fornavn   </label>
+                    </div>
+                    <div class="colX">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="colB">
+                        <input type="text" id="fornavn" placeholder=" Fornavn "/>
+                    </div>
+                    <div class="error colC" id="errorFornavn"><p></p></div>
+                </div>
+
+                <div class="row">
+                    <div class="colA">
+                        <label for="etternavn"> Etternavn  </label>
+                    </div>
+                    <div class="colX">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="colB">
+                        <input type="text" id="etternavn" placeholder=" Etternavn "/>
+                    </div>
+                    <div class="error colC" id="errorEtternavn"><p></p></div>
+                </div>
+
+                <div class="row">
+                    <div class="colA">
+                        <label for="telefon"> Telefon  </label>
+                    </div>
+                    <div class="colX">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="colB">
+                        <input type="text" id="telefon" placeholder=" Telefon "/>
+                    </div>
+                    <div class="error colC" id="errorTelefon"><p></p></div>
+                </div>
+
+                <div class="row">
+                    <div class="colA">
+                        <label for="epost"> Epost  </label>
+
+                    </div>
+                    <div class="colX">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="colB">
+                        <input type="text" id="epost" placeholder=" Epost "/>
+                    </div>
+                    <div class="error colC" id="errorEpost"><p></p></div>
+                </div>
+            </div>
+            <div class="row">
+                <button id="kjop">Kjøp billett</button>
+                <button id="endre">Endre billett</button>
+                <button id="avbryt">Avbryt </button>
+            </div>
+        </form>
+    </section>
+
+    <section id="oversikt">
+        <header>Alle billetter  <i class="fa fa-refresh" id="refresh" aria-hidden="true"></i><button id="logUt">Log ut</button> </header>
+
+        <i class="fa fa-circle-o-notch fa-spin" id="spinner2" ></i>
+        <div id="placeHolderTable"></div>
+        <i class="fa fa-angle-double-down" id="getMore" aria-hidden="true"></i>
+        <button id="slettButton">Slett alle billettene</button>
+    </section>
+</main>
+</body>
+</html>

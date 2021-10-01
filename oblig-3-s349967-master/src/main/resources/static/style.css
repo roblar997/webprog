@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+
+
+
+}
+
+#spinner1,#spinner2,#spinner3,#logUt, #infoBoks,#endre,#avbryt{
+    display: none;
+}
+
+#spinner2 {
+    font-size:72px;
+    margin-left: min(600px,30vw);
+}
+#getMore {
+    margin-left: min(600px,30vw);
+    font-size:72px;
+    display: none;
+
+}
+
+
+#login {
+    display: none;
+}
+table > * {
+    overflow-x:hidden;
+
+}
+button,input,select {
+    font-size: 16px;
+
+
+}
+select {
+    background-color: lightgreen;
+}
+input:focus, button:focus, input:hover, button:hover,select:focus, select:hover {
+    color: yellow !important;
+    background-color: black !important;
+}
+input {
+    background-color: aliceblue;
+}
+label {
+    font-weight: bold;
+    width: 8rem;
+}
+main {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 22px;
+}
+#spinner1 {
+    margin-left: 90px;
+    position: absolute;
+
+}
+#spinner2 {
+    margin-left: 130px;
+    margin-top: 120px;
+    position: absolute;
+
+}
+#spinner3{
+    font-size: 22px;
+    color: white;
+    margin-left: 2px;
+}
+#infoBoksLogin {
+    color: yellow;
+}
+.warning {
+    margin-top: 0.5em;
+    background-color: yellow;
+    color: black;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    font-weight: bolder;
+}
+#infoBoks {
+    border: 2px solid black;
+    padding-left: 0.1%;
+
+    width: 12em;
+}
+
+
+.slettButton {
+
+    margin: 5px 5px 5px 5px;
+
+}
+
+
+option {
+    overflow-x: auto;
+}
+@media only screen and (max-width: 1200px) {
+    table, .slettButton,.endreButton {
+
+        font-size: 2vw  !important;
+    }
+    th {
+        min-width: 0vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    table, .slettButton,.endreButton {
+
+        font-size: 1.5vw !important;
+
+    }
+    th {
+        min-width: 0vw;
+    }
+
+
+}
+
+
+
+.row{
+    display: block;
+    padding-top: 1%;
+
+}
+[class *= "error"]{
+    background-color: white;
+
+    color: red;
+}
+tr:nth-child(even) {background-color: lightgray}
+tr:nth-child(odd) {background-color: white}
+th {
+
+    background-color: cornflowerblue;
+    min-width: 6vw;
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+
+
+}
+th:hover, th > *:hover{
+    cursor: pointer;
+}
+#avbryt {
+    margin-left: 3px;
+}
+#logUt {
+    margin-left: 1em;
+    font-size: 22px;
+    background-color: gainsboro;
+    color: black;
+    padding: 1px 1px 1px 1px;
+}
+.endreButton, #avbryt,#registrer {
+    color: black;
+    font-size: 18px;
+
+    padding: 1px 1px 1px 1px;
+    background-color: 	palegoldenrod;
+}
+td {
+
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+    text-align: left;
+
+}
+
+#filmValg {
+    max-width: 50vw;
+    overflow-x: auto;
+}
+#antall {
+    width: 3.5em;
+}
+#partA, .partB {
+    padding-top: 2%;
+
+}
+
+#slettButton{
+    margin-top: 3px;
+    display: none;
+}
+#slettButton, .slettButton {
+
+    background-color: lightcoral;
+    color: black;
+    font-size: 18px;
+    padding: 1px 1px 1px 1px;
+}
+#kjop, #endre,#loginOk{
+    background-color: lightgreen;
+    color: black;
+    font-size: 18px;
+
+    padding: 1px 1px 1px 1px;
+}
+
+
+#slettButton {
+    font-weight: bold;
+}
+div.colA {
+    display: inline-block;
+    width:10rem;
+
+
+}
+
+div.colX {
+    display: inline-block;
+    width: 3rem;
+
+
+}
+div.colB {
+    display: inline-block;
+    width:13rem;
+
+
+}
+div[class *= "colC"] {
+    display: inline-block;
+    max-width:60rem;
+    margin-left: 3rem;
+
+}
+section#bestill > header,section#login > header  {
+
+    font-size: 28px;
+}
+
+section#login {
+    border: 2px solid black;
+    position: absolute;
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 15%;
+    background-color:  black;
+    color: white !important;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#errorBrukernavn, #errorPassord {
+    background-color:  black;
+
+}
+
+section#oversikt > header {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-size: 28px;
+}
